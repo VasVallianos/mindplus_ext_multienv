@@ -1,0 +1,25 @@
+{
+	"name": {
+		"en": "Multifunctional Enviromental Sensor (v.0.1)",
+		"el": "Multifunctional Enviromental Sensor (v.0.1)"
+	},
+	"description": {
+		"en": "Multifunctional Enviromental Sensor (v.0.1)",
+		"el": "Multifunctional Enviromental Sensor (v.0.1)"
+	},
+	"author": "wallia",
+	"email": "v.vallianos@gmail.com",
+	"license": "MIT",
+	"isBoard": false,
+	"id": "multienv",
+	"platform": ["win", "mac", "web"],
+	"version": "0.1",
+	"asset": {
+		"arduinoC": {
+			"dir": "arduinoC/",
+			"version": "0.1",
+			"board": ["arduino"],
+			"main": "main.ts"
+		}
+	}
+}
