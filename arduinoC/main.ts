@@ -56,7 +56,7 @@ namespace multienv {
 	//% block="Διάβασε υπεριώδη (UV) ακτινοβολία" blockType="reporter"
     export function getUltravioletIntensity(parameter: any, block: any) {
         if(Generator.board === 'arduino'){
-            Generator.addCode(`multienvsensor.getUltravioletIntensity(eUVSOC soc = eLTR390UV)`);
+            Generator.addCode(`multienvsensor.getUltravioletIntensity(eLTR390UV)`);
         }
     }
   
