@@ -1,9 +1,11 @@
 {
     "multienv.initMultiEnvModule|block": "Αρχικοποίηση [MODE] του Multifunctional Enviromental Sensor",
     "multienv.getLuminousIntensity|block": "Διάβασε φωτεινότητα",
-    "multienv.getTemperature|block": "Διάβασε θερμοκρασία",
+    "multienv.getTemperatureC|block": "Διάβασε θερμοκρασία (C)",
+	"multienv.getTemperatureF|block": "Διάβασε θερμοκρασία (F)",
     "multienv.getHumidity|block": "Διάβασε σχετική υγρασία",
     "multienv.getUltravioletIntensity|block": "Διάβασε υπεριώδη (UV) ακτινοβολία",
-    "multienv.getAtmospherePressure|block": "Διάβασε ατμοσφαρική πίεση",
+    "multienv.getAtmospherePressureH|block": "Διάβασε ατμοσφαρική πίεση σε hPa",
+	"multienv.getAtmospherePressureK|block": "Διάβασε ατμοσφαρική πίεση σε kPa",
     "multienv.getElevation|block": "Διάβασε υψόμετρο"
 }

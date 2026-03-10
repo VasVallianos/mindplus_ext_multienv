@@ -32,10 +32,17 @@ namespace multienv {
         }
     }
 	
-	//% block="Διάβασε θερμοκρασία" blockType="reporter"
-    export function getTemperature(parameter: any, block: any) {
+	//% block="Διάβασε θερμοκρασία (C)" blockType="reporter"
+    export function getTemperatureC(parameter: any, block: any) {
         if(Generator.board === 'arduino'){
             Generator.addCode(`multienvsensor.getTemperature(TEMP_C)`);
+        }
+    }
+	
+	//% block="Διάβασε θερμοκρασία (F)" blockType="reporter"
+    export function getTemperatureF(parameter: any, block: any) {
+        if(Generator.board === 'arduino'){
+            Generator.addCode(`multienvsensor.getTemperature(TEMP_F)`);
         }
     }
   
@@ -49,21 +56,28 @@ namespace multienv {
 	//% block="Διάβασε υπεριώδη (UV) ακτινοβολία" blockType="reporter"
     export function getUltravioletIntensity(parameter: any, block: any) {
         if(Generator.board === 'arduino'){
-            Generator.addCode(`multienvsensor.getUltravioletIntensity()`);
+            Generator.addCode(`multienvsensor.getUltravioletIntensity(eUVSOC soc = eLTR390UV)`);
         }
     }
   
-  	//% block="Διάβασε ατμοσφαρική πίεση" blockType="reporter"
-    export function getAtmospherePressure(parameter: any, block: any) {
+  	//% block="Διάβασε ατμοσφαρική πίεση σε hPa" blockType="reporter"
+    export function getAtmospherePressureH(parameter: any, block: any) {
         if(Generator.board === 'arduino'){
             Generator.addCode(`multienvsensor.getAtmospherePressure(HPA)`);
+        }
+    }
+	
+	//% block="Διάβασε ατμοσφαρική πίεση σε kPa" blockType="reporter"
+    export function getAtmospherePressureK(parameter: any, block: any) {
+        if(Generator.board === 'arduino'){
+            Generator.addCode(`multienvsensor.getAtmospherePressure(KPA)`);
         }
     }
   
     //% block="Διάβασε υψόμετρο" blockType="reporter"
     export function getElevation(parameter: any, block: any) {
         if(Generator.board === 'arduino'){
-            Generator.addCode(`multienvsensor.getElevation().toFloat()`);
+            Generator.addCode(`multienvsensor.getElevation()`);
         }
     }
 }
